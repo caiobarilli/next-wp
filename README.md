@@ -5,6 +5,8 @@
 | **wordpress** | localhost | 8000 |
 | **nextjs**    | localhost | 6006 |
 
+<br />
+
 ### Pré-requisitos
 
 #
