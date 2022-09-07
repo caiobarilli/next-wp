@@ -22,5 +22,5 @@ Para começar, certifique-se de ter [NodeJS](https://nodejs.org/en/), [Docker](h
 Faça o download do projeto com o comando:
 
 ```sh
-git clone https://github.com/caiobarilli/NEXT_WP.git
+git clone https://github.com/caiobarilli/next-wp.git
 ```
