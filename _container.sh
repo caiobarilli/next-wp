@@ -1,18 +1,25 @@
 #!/bin/bash
 
 # variables
+whoami=`whoami`
 pwd=$(pwd)
+container_id=$(docker ps -qf "name=wordpress")
 
-# display
 echo " "
 echo " "
 echo " ================================================================= "
 echo " "
-echo " Download & building containers for wordpress"
+echo " Setting Permissions in $pwd/backend/cms/wp-content/themes"
 echo " "
 echo " ================================================================= "
 echo " "
 echo " "
+echo " "
 
-cd $pwd/backend/cms
-docker-compose up
+docker exec -it $container_id /bin/bash
+
+echo " "
+echo " "
+echo " Bye $whoami"
+echo " "
+echo " "
