@@ -11,6 +11,5 @@ echo " ================================================================= "
 echo " "
 echo " "
 
-cd ./backend/cms
-
+cd $pwd/backend/cms
 docker-compose up

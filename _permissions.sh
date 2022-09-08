@@ -16,21 +16,14 @@ echo " "
 echo " "
 echo " "
 
-
 # docker exec -it $container_id /bin/bash
+chown -R 1000:www-data ./backend/cms/wp-content/themes
+chown -R 1000:www-data ./backend/cms/wp-content/themes/wp_custom_theme/
 
 docker exec -it $container_id /bin/bash -c "
 cd /var/www/html/wp-content/themes
-mkdir my_theme_dir
-cd /var/www/html/wp-content/
 ls -lah
 "
-
-chown -R 1000:www-data ./backend/cms/wp-content/themes
-
-ln -s ./backend/theme/** ./backend/cms/wp-content/themes/my_theme_dir/
-
-chown -R 1000:www-data ./backend/cms/wp-content/themes/my_theme_dir/
 
 echo " "
 echo " "
