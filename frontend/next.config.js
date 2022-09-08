@@ -16,6 +16,9 @@ const nextConfig = withPWA({
   compiler: {
     styledComponents: true,
   },
+  images: {
+    domains: ['http://localhost:8000/'],
+  },
 })
 
 module.exports = nextConfig
