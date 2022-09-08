@@ -15,3 +15,5 @@
  *
  */
 
+  header('Location: //localhost:3000');
+  exit();
