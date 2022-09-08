@@ -1,5 +1,16 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+#cms
+/backend/cms/*.php
+/backend/cms/*.html
+/backend/cms/*.txt
+/backend/cms/*.htaccess
+/backend/cms/wp-admin/
+/backend/cms/wp-includes/
+/backend/cms/wp-content/plugins/
+/backend/cms/wp-content/themes/index.php
+/backend/cms/wp-content/index.php
+
 # dependencies
 /frontend/node_modules
 /frontend/.pnp
