@@ -19,8 +19,7 @@ echo " "
 # docker exec -it $container_id /bin/bash
 
 # docker exec -it $container_id /bin/bash -c "
-# chown -R www-data:www-data /var/www/html/wp-content
-# chown -R 1000:www-data /var/www/html/wp-content/themes
+# chown -R 1000:1000 /var/www/html/wp-content/themes
 # cd /var/www/html/wp-content
 # ls -lah
 # "
