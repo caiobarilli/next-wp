@@ -7,6 +7,8 @@
 /backend/cms/*.htaccess
 /backend/cms/wp-admin/
 /backend/cms/wp-includes/
+/backend/cms/wp-content/upgrade/
+/backend/cms/wp-content/uploads/
 /backend/cms/wp-content/plugins/
 /backend/cms/wp-content/themes/twentytwenty
 /backend/cms/wp-content/themes/twentytwentyone
