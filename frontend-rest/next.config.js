@@ -17,7 +17,7 @@ const nextConfig = withPWA({
     styledComponents: true,
   },
   images: {
-    domains: ['http://localhost:8000/'],
+    domains: [`${process.env.WORDPRESS_URL}`],
   },
 })
 

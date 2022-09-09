@@ -8,7 +8,6 @@ export async function getPosts() {
 
 export async function getPost(slug: string) {
   const posts = await getPosts()
-
   const postArray = posts.filter((post: { slug: string }) => post.slug == slug)
   const post = postArray.length > 0 ? postArray[0] : null
   return post
@@ -21,12 +20,11 @@ export async function getSlugs(type: string) {
       elements = await getPosts()
       break
   }
-  const elementsIds = elements.map((element: { slug: string }) => {
+  return elements.map((element: { slug: string }) => {
     return {
       params: {
         slug: element.slug,
       },
     }
   })
-  return elementsIds
 }

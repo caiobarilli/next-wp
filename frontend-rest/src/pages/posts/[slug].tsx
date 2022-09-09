@@ -2,6 +2,12 @@ import Link from 'next/link'
 import { PostType } from 'components/Post'
 import { getPost, getSlugs } from 'utils/api'
 
+type ParamsType = {
+  params: {
+    slug: string
+  }
+}
+
 export default function PostPage({ post }: PostType) {
   return (
     <div>
@@ -22,7 +28,7 @@ export async function getStaticPaths() {
   }
 }
 
-export async function getStaticProps({ params }: any) {
+export async function getStaticProps({ params }: ParamsType) {
   const post = await getPost(params.slug)
   return {
     props: {

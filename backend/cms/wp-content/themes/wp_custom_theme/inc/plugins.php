@@ -32,6 +32,14 @@ function custom_theme_require_plugins()
             'force_deactivation' => true, // deactivate this plugin when the user switches to another theme
         ),
 
+        array(
+            'name'               => 'WPGraphQl',
+            'slug'               => 'wp-graphql',
+            'source'             => get_stylesheet_directory() . '/plugins/wp-graphql.1.9.1.zip',
+            'required'           => false, // this plugin is required
+            'external_url'       => 'https://br.wordpress.org/plugins/wp-graphql/', // page of my plugin
+            'force_deactivation' => true, // deactivate this plugin when the user switches to another theme
+        ),
     );
 
     $config = array( /* The array to configure TGM Plugin Activation */ );
