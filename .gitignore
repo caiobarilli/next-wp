@@ -15,37 +15,3 @@
 /backend/cms/wp-content/themes/twentytwentytwo
 /backend/cms/wp-content/themes/index.php
 /backend/cms/wp-content/index.php
-
-# dependencies
-/frontend/node_modules
-/frontend/.pnp
-/frontend.pnp.js
-
-# testing
-/frontend/coverage
-
-# next.js
-/frontend/.next/
-/frontend/out/
-
-# production
-/frontend/build
-
-# misc
-/frontend.DS_Store
-/frontend*.pem
-
-# debug
-/frontendnpm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
-
-# local env files
-.env*.local
-
-# vercel
-.vercel
-
-# typescript
-*.tsbuildinfo
