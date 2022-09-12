@@ -3,6 +3,7 @@ import { getPosts } from 'utils/api'
 
 export default function Home({ posts }: PostsType) {
   return posts.map((post) => {
+    console.log(post.fimg_url)
     return <Post post={post} key={post.id} />
   })
 }

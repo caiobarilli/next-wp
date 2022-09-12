@@ -11,6 +11,7 @@ export type SinglePostType = {
   excerpt: {
     rendered: string
   }
+  fimg_url?: string
   modified: Date
   slug: string
   id: string
